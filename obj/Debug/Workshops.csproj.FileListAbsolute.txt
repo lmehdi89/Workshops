@@ -1,0 +1,13 @@
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\Workshops\Workshops\bin\Workshops.dll.config
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\Workshops\Workshops\bin\Workshops.dll
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\Workshops\Workshops\bin\Workshops.pdb
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\Workshops\Workshops\obj\Debug\Workshops.dll.licenses
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\Workshops\Workshops\obj\Debug\Workshops.dll
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\Workshops\Workshops\obj\Debug\Workshops.pdb
+E:\Workshops\Workshops\obj\Debug\Workshops.dll.licenses
+E:\Workshops\Workshops\bin\Workshops.dll.config
+E:\Workshops\Workshops\bin\Workshops.dll
+E:\Workshops\Workshops\bin\Workshops.pdb
+E:\Workshops\Workshops\obj\Debug\Workshops.dll
+E:\Workshops\Workshops\obj\Debug\Workshops.pdb
+E:\Workshops\Workshops\obj\Debug\Workshops.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\GUMS_Herbal\GUMS_Herbal\bin\GUMS_Herbal.dll.config
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\GUMS_Herbal\GUMS_Herbal\bin\GUMS_Herbal.dll
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\GUMS_Herbal\GUMS_Herbal\bin\GUMS_Herbal.pdb
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\GUMS_Herbal\GUMS_Herbal\obj\Debug\GUMS_Herbal.dll.licenses
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\GUMS_Herbal\GUMS_Herbal\obj\Debug\GUMS_Herbal.dll
+C:\Users\PC\Documents\Visual Studio 2010\WebSites\GUMS_Herbal\GUMS_Herbal\obj\Debug\GUMS_Herbal.pdb

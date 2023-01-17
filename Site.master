@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SiteMaster" CodeBehind="Site.master.cs" %>
+
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!doctype html>
+<html class="no-js" lang="">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>سامانه مدیریت کارگاه های آموزشی - <%: Page.Title %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="Styles/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles/vendor/animate.min.css">
+    <link rel="stylesheet" href="Styles/vendor/owl.carousel.css">
+    <link rel="stylesheet" href="Styles/vendor/owl.transitions.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/my.css">
+    <script src="Scripts/vendor/modernizr.js"></script>
+
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+
+<body class="single" dir="rtl">
+    <form id="form1" runat="server">
+        
+
+        <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+        <!-- Loader to display before content Load-->
+        <div class="loading">
+            <img src="Images/puff.gif" alt="">
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="row" role="banner">
+                    <div class="col-md-6">
+                        <div class="logo">
+                            <img src="Images/logo.png" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="logo" style="float: right;">
+                            <img src="Images/logo.png" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <div class="main-menu">
+            <div id="rex-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 menu-section">
+                            <div class="menu-button one-page">منو</div>
+                            <nav>
+                                <ul id="navigation-menu" data-breakpoint="992" class="flexnav one-page">
+                                    <li><a href="Default.aspx">صفحه اصلی</a></li>
+                                    <li><a href="#about">مدیریت کارگاه ها</a>
+                                        <li><a href="Users.aspx">مدیریت کاربران</a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <span class="background"></span>
+        <section class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- Hero Section -->
+                        <div class="about">
+                            <div class="hero">
+                                <div class="hero-inner">
+                                    <a href="" class="hero-logo">
+                                        <img src="http://placehold.it/152x152" alt="Logo Image"></a>
+                                    <div class="hero-copy">
+                                        <h1>علی انصاری</h1>
+                                        <h6>کارشناس IT</h6>
+                                        <div class="hero-btn">
+                                            <a class="btn btn-default rex-primary-btn-effect-No" href="#contact" role="button"><span>سوابق من</span></a>
+                                            <a class="btn btn-default rex-primary-btn-effect" href="#" role="button">گواهی ها</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+
+                        <!-- Workshops Section -->
+                        <div class="active-section" id="blog">
+                            <section class="section-block">
+                                <h4 class="title">کارگاه های آموزشی</h4>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        
+                                        <telerik:RadScriptManager runat="server" ID="RadScriptManager1" EnablePageMethods="true" />
+                                        <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+                                            <AjaxSettings>
+                                                <telerik:AjaxSetting AjaxControlID="RadAjaxPanel1">
+                                                    <UpdatedControls>
+                                                        <telerik:AjaxUpdatedControl ControlID="RadAjaxPanel1" LoadingPanelID="LoadingPanel1"></telerik:AjaxUpdatedControl>
+                                                    </UpdatedControls>
+                                                </telerik:AjaxSetting>
+                                            </AjaxSettings>
+                                        </telerik:RadAjaxManager>
+
+                                        <telerik:RadAjaxLoadingPanel runat="server" ID="LoadingPanel1" InitialDelayTime="1000">
+                                            <asp:Label ID="Label2" runat="server" ForeColor="#666666" Font-Names="Tahoma" Font-Size="13px" BackColor="#d8cbef">در حال پردازش...</asp:Label>
+                                        </telerik:RadAjaxLoadingPanel>
+
+                                        <telerik:RadAjaxPanel ID="RadAjaxPanel1" runat="server">
+
+                                            <telerik:RadNotification ID="RadNotification1" runat="server" ShowCloseButton="true" KeepOnMouseOver="true" OffsetY="40"
+                                                AutoCloseDelay="5000" Position="TopCenter" Animation="Fade" AnimationDuration="500" ContentIcon="none" TitleIcon="none"
+                                                EnableRoundedCorners="true" EnableShadow="true" CssClass="MyNotif">
+                                            </telerik:RadNotification>
+                                             </telerik:RadAjaxPanel>
+                                          
+                        <br>
+
+                        <footer>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p dir="ltr">
+                                        Version
+                                        <asp:Label runat="server" ID="LB_Version" Text=""></asp:Label>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Label runat="server" ID="LB_ReleaseDate" Text=""></asp:Label>
+
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script src="Scripts/vendor/jquery.js"></script>
+        <script src="Scripts/vendor/grid.js"></script>
+        <script src="Scripts/vendor/owl.carousel.min.js"></script>
+        <script src="Scripts/vendor/wow.min.js"></script>
+        <script src="Scripts/vendor/jquery.nav.js"></script>
+        <script src="Scripts/vendor/typed.min.js"></script>
+        <script src="Scripts/vendor/jquery.scrollUp.min.js"></script>
+        <script src="Scripts/vendor/scroll.js"></script>
+        <script src="Scripts/vendor/jquery.sticky.js"></script>
+        <script src="Scripts/vendor/jquery.flexnav.min.js"></script>
+        <script src="Scripts/vendor/masonry.pkgd.min.js"></script>
+        <script src="Scripts/vendor/skrollr.js"></script>
+        <script src="Scripts/script.js"></script>
+    </form>
+</body>
+
+</html>
